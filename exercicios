@@ -1,0 +1,18 @@
+# Exercícios:
+    # Criar um jogo que o computador escolhe um valor de 0 a 5 e você tente adivinhar !
+import random 
+
+print('# Vamos jogar um jogo! #')
+
+print('\nVou escolher um numero de 0 a 5 tente adivinhar...\n ')
+
+x = random.randint(0,5)
+
+esc = int(input('Que número que pensei?: '))
+
+
+
+if esc == x:
+  print('!PARABÉNS! você ganhou!')
+else:
+  print('!GANHEI! pensei no número {} não no {}'.format(x, esc))
