@@ -1,0 +1,13 @@
+# Exercicio 2
+    # leie a velocidade de um carro e mostre se tier acima de 80km/h mostra que ele foi multado e a multa é de R$7,00 cada km há cima do limite.
+
+vl = float(input('Qual a velocidade atual do carro? '))
+
+if vl > 80:
+    print('MULTADO! você excedeu o limite permitdo que é de 80km/h')
+    multa = ()
+    print('Você deve pagar uma multa de {:.2f}'.format())
+print('tenha um bom dia! Dirija com segurança!')
+
+
+
