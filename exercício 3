@@ -3,19 +3,21 @@
 
 from time import sleep
 
-distancia = float(input('Qual a distância da viagem? ')).sprit
+print('~~\\\~~'*20)
+
+distancia = float(input('\nQual a distância da viagem? '))
 
 sleep(2)
 
-print('você começará sua viagem de {:.2f}km em alguns instantes'.format(distancia))
+print('você começará sua viagem de {}km em alguns instantes\n'.format(distancia))
 
-print('CALCULANDO O PREÇO...')
+print('CALCULANDO O PREÇO...\n')
 
 sleep(2)
 
 if distancia <= 200:
-    preço1 = distancia * 0,50    
-    print('\nO preço da passagem será R${:.2f}'.format(preço1))
+    preço = distancia * 0.50
 else:
-    preço2 = distancia * 0,45
-    print('O preço da passagem será R${:.2f}'.format(preço2))
+    preço = distancia * 0.45
+print('O preço da passagem será R${:.2f}\n'.format(preço))
+print('~~\\\~~'*20)
