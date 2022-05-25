@@ -1,0 +1,21 @@
+ # Exercicio 3   
+    # calcule o preço da passagem cobrando R$0,50 por km para viagens de até 200km e R$0,45 para viagens mais longas
+
+from time import sleep
+
+distancia = float(input('Qual a distância da viagem? ')).sprit
+
+sleep(2)
+
+print('você começará sua viagem de {:.2f}km em alguns instantes'.format(distancia))
+
+print('CALCULANDO O PREÇO...')
+
+sleep(2)
+
+if distancia <= 200:
+    preço1 = distancia * 0,50    
+    print('\nO preço da passagem será R${:.2f}'.format(preço1))
+else:
+    preço2 = distancia * 0,45
+    print('O preço da passagem será R${:.2f}'.format(preço2))
