@@ -15,7 +15,7 @@ print('CALCULANDO O PREÇO...\n')
 
 sleep(2)
 
-if distancia <= 200:
+if distancia <= 200: # condição composta contem If e Else
     preço = distancia * 0.50
 else:
     preço = distancia * 0.45

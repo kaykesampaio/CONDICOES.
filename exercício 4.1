@@ -2,23 +2,17 @@
     # calcule o preço da passagem cobrando R$0,50 por km para viagens de até 200km e R$0,45 para viagens mais longas
         # forma condição simplificada
 
-from time import sleep
 
 print('~~\\\~~'*20)
 
 distancia = float(input('\nQual a distância da viagem? '))
 
-sleep(2)
-
 print('você começará sua viagem de {}km em alguns instantes\n'.format(distancia))
-
-print('CALCULANDO O PREÇO...\n')
-
-sleep(2)
 
 preço = distancia * 0.50 if distancia <= 200 else distancia * 0.45
 
 print('O preço da passagem será R${:.2f}\n'.format(preço))
+
 print('~~\\\~~'*20)
 
 
