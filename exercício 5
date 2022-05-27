@@ -1,3 +1,5 @@
+# exercicio 5 "almento do salário" se o salario for R$ 1.250 recebera um almento de 10% caso nao será 15%
+
 from time import sleep
 
 print('~~'*35)
