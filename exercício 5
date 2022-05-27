@@ -1,0 +1,28 @@
+from time import sleep
+
+print('~~'*35)
+
+s = float(input('Informe o valor do seu salário:'))
+
+print('\n# Se o seu salário for superior a 1.250.00 almentará 10% caso contrario irá almenta 15% #\n')
+
+if s <= 1250:
+    almento = s * 0.10
+else:
+    almento = s * 0.15
+
+print('processando...\n')
+
+sleep(2)
+
+print('Quantia que irá almentar: R${:.2f}\n'.format(almento))
+
+total = s + almento
+
+print('Calculando valor total...')
+
+sleep(2)
+
+print('\nSeu salário com almento ficará: R${:.2f}'.format(total))
+
+print('-=-'*35)
