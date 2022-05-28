@@ -1,7 +1,11 @@
+# !! impar e par !!
 
+n = int(input('Me diga um número: '))
 
+r = n % 2
 
-
-
-
+if n == 0:
+    print('O número {} é PAR'.format(n))
+else:
+    print('O número {} é IMPAR'.format(n))
 

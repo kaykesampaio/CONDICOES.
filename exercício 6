@@ -1,0 +1,50 @@
+# exercício 6, crie um programa que leia tres retas e diga ao sujeito se elas podem ou não fazer um triangulo
+
+print('~~==~~'*25)
+
+from time import sleep 
+
+sleep(1)
+
+print('Quer saber se suas retas formam um triângulo? Digite os valores a baixo !!')
+
+sleep(2)
+
+r1 = float(input('digite o 1° valor: '))
+
+sleep(1)
+
+r2 = float(input('digite o 2° valor: '))
+
+sleep(1)
+
+r3 = float(input('digite o 3° valor: '))
+
+sleep(2)
+
+if r1 < (r2 + r3):
+    print('primeiro if')
+    print('O valor {:.1f} forma uma parte do triângulo!'.format(r1))
+    if r2 < (r1 + r3):
+        print('segundo if')
+        print('O valor {:.1f} forma uma parte do triângulo!'.format(r2))
+        if r3 < (r1 + r2):
+            print('terceiro if')
+            print('O valor {:.1f} forma uma parte do triângulo!'.format(r3))
+        else:
+            print('terceiro else')
+            print('O valor {:.1f} não forma uma parte do triângulo!'.format(r3))
+    else:
+        print('segundo else')
+        print('O valor {:.1f} não forma uma parte do triângulo!'.format(r2))
+else:
+    print('primeiro else')
+    print('O valor {:.1f} não forma uma parte do triângulo!'.format(r1))
+
+print('~~==~~'*25)
+
+
+
+
+
+
