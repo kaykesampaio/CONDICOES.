@@ -1,0 +1,25 @@
+# outro jeito de se fazer o exercicio 6
+from time import sleep 
+
+print('Descubra se da para fazer um triângulo com suas retas ')
+
+r1 = float(input('Digite o 1° valor: '))
+
+sleep(1)
+
+r2 = float(input('digite o 2° valor: '))
+
+sleep(1)
+
+r3 = float(input('digite o 3° valor: '))
+
+sleep(1)
+
+print('ANÁLIZANDO...')
+
+sleep(2)
+
+if r1 < r2 + r3 and r2 < r1 + r3 and r3 < r1 + r2:
+    print('As retas a cima formam um triângulo!')
+else:
+    print('As retas a cima não formam um triângulo!')
